@@ -29,7 +29,7 @@
                 this.id = this.$route.query.id
             }
             if (this.$route.query && this.$route.query.isView) {
-                this.isView = this.$route.query.isView
+                this.isView = JSON.parse(this.$route.query.isView)
             }
             this.getModelData()
         },
